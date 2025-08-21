@@ -43,11 +43,11 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
           <div className="p-3 bg-gradient-primary rounded-full">
             <GraduationCap className="h-8 w-8 text-primary-foreground" />
           </div>
-          <h1 className="text-4xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold bg-gradient-hero bg-clip-text text-transparent">
             Campus Check-In
           </h1>
         </div>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-muted-foreground max-w-2xl mx-auto text-xl">
           Modern attendance tracking system for secondary schools. 
           Streamline your daily attendance management with our intuitive platform.
         </p>
@@ -72,9 +72,9 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
               >
                 <Icon className="h-5 w-5" />
                 <div className="text-left">
-                  <div className="font-semibold">{tab.label}</div>
+                  <div className="font-semibold text-lg">{tab.label}</div>
                   <div className={cn(
-                    "text-xs opacity-80",
+                    "text-sm opacity-80",
                     isActive ? "text-primary-foreground/80" : "text-muted-foreground"
                   )}>
                     {tab.description}
